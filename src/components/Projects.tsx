@@ -26,7 +26,7 @@ const projects: Project[] = [
       "Employee task management"
     ],
     techStack: ["React", "Node.js", "Express.js", "MongoDB"],
-    image: "src/assets/projects/MSR Tailor Store.png",
+    image: "assets/projects/MSR Tailor Store.png",
     livePreviewUrl: "https://example.com/msr-tailor-store", // Replace with actual link
     viewCodeUrl: "https://github.com/username/msr-tailor-store", // Replace with actual link
   },

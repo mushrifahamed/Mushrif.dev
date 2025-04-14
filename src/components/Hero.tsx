@@ -62,7 +62,7 @@ const Hero = () => {
             <div className="relative w-full h-full">
               {/* Image filling the right side of the hero section */}
               <img 
-                src="./src/assets/me.png"  // Ensure you import your image correctly
+                src="/assets/me.png"  // Ensure you import your image correctly
                 alt="Mushrif Ahamed" 
                 className="w-full h-full object-cover rounded-lg"
               />

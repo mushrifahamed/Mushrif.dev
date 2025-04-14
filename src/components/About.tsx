@@ -17,7 +17,7 @@ const About = () => {
           <div className="relative">
             <div className="relative z-10 rounded-xl overflow-hidden border border-mauve/30">
               <img 
-                src="./src/assets/About.jpg" 
+                src="assets/About.jpg" 
                 alt="About Mushrif Ahamed" 
                 className="w-full h-full object-cover"
               />
@@ -50,7 +50,7 @@ const About = () => {
               </div>
             </div>
 
-            <a href="/src/assets/Mushrif Ahamed.pdf" download>
+            <a href="assets/Mushrif Ahamed.pdf" download>
               <Button 
                 className="rounded-full bg-mauve hover:bg-mauve-light text-white px-6 flex items-center gap-2"
               >
