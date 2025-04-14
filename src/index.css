@@ -1,0 +1,73 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 320 28% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 320 28% 87%;
+    --secondary-foreground: 320 28% 20%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 320 28% 47%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 320 28% 47%;
+
+    --radius: 0.8rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-dark text-foreground;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-mauve to-mauve-light text-transparent bg-clip-text;
+  }
+
+  .mauve-shadow {
+    box-shadow: 0 0 15px rgba(142, 98, 136, 0.3);
+  }
+  
+  .purple-glassmorphism {
+    @apply bg-mauve/5 backdrop-blur-sm border border-mauve/20 rounded-xl;
+  }
+
+  .star {
+    position: absolute;
+    @apply text-mauve opacity-70;
+    animation: glow 3s ease-in-out infinite;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1;
+  }
+}
